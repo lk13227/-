@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LKVideoView">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="317"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Q9H-sm-Chc">
+                    <rect key="frame" x="0.0" y="20" width="401" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="fNL-iL-KUB"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bHf-Jc-SVe">
+                    <rect key="frame" x="0.0" y="0.0" width="401" height="317"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9M-Kz-EBV">
+                    <rect key="frame" x="165" y="123" width="71" height="71"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="71" id="MgO-0W-1ip"/>
+                        <constraint firstAttribute="height" constant="71" id="jd3-8U-Hci"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="video-play"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1s-eh-BYC" userLabel="播放次数">
+                    <rect key="frame" x="365" y="0.0" width="36" height="17"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJF-W9-mkY" userLabel="播放时长">
+                    <rect key="frame" x="365" y="300" width="36" height="17"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="0.79543439716312059" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Q9H-sm-Chc" secondAttribute="trailing" id="4Rp-2Z-eX0"/>
+                <constraint firstAttribute="trailing" secondItem="D1s-eh-BYC" secondAttribute="trailing" id="5zg-kh-uw0"/>
+                <constraint firstItem="Q9H-sm-Chc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="6h7-08-XSQ"/>
+                <constraint firstItem="bHf-Jc-SVe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="79i-Yq-bDE"/>
+                <constraint firstItem="D1s-eh-BYC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7h5-uk-zpB"/>
+                <constraint firstAttribute="trailing" secondItem="bHf-Jc-SVe" secondAttribute="trailing" id="Dkg-zA-13M"/>
+                <constraint firstAttribute="bottom" secondItem="bHf-Jc-SVe" secondAttribute="bottom" id="GwS-7D-OGU"/>
+                <constraint firstAttribute="bottom" secondItem="nJF-W9-mkY" secondAttribute="bottom" id="Icj-aB-XIm"/>
+                <constraint firstItem="V9M-Kz-EBV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="V0j-rz-iLH"/>
+                <constraint firstAttribute="trailing" secondItem="nJF-W9-mkY" secondAttribute="trailing" id="WzE-xZ-aC3"/>
+                <constraint firstItem="V9M-Kz-EBV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eeo-eg-hix"/>
+                <constraint firstItem="bHf-Jc-SVe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="n2t-PG-Sl0"/>
+                <constraint firstItem="Q9H-sm-Chc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nm3-Oy-oIb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="bHf-Jc-SVe" id="QMS-MP-rO9"/>
+                <outlet property="playcountLabel" destination="D1s-eh-BYC" id="J6t-em-VHb"/>
+                <outlet property="playtimeLabel" destination="nJF-W9-mkY" id="gES-0o-cKi"/>
+            </connections>
+            <point key="canvasLocation" x="395.5" y="83.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imageBackground" width="75" height="15"/>
+        <image name="video-play" width="71" height="71"/>
+    </resources>
+</document>

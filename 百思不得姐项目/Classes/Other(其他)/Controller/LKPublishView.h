@@ -1,0 +1,13 @@
+//
+//  LKPublishView.h
+//  百思不得姐项目
+//
+//  Created by 理念-刘凯 on 16/3/19.
+//  Copyright © 2016年 LK. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface LKPublishView : UIView
++ (instancetype)publishView;
+@end

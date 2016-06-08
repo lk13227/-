@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐项目
+//
+//  Created by 理念-刘凯 on 16/3/4.
+//  Copyright © 2016年 LK. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+LKExtension.h"
+#import "UIBarButtonItem+LKExtension.h"
+#import "LKConst.h"
+#import "NSDate+LKExtension.h"
+
+#ifdef DEBUG
+#define LKLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define LKLog( s, ... )
+#endif
+
+#define LKRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define LKGlobalBg [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1.0]
+
+
+#define LKScreenH [UIScreen mainScreen].bounds.size.height
+#define LKScreenW [UIScreen mainScreen].bounds.size.width
+#endif
