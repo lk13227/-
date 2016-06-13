@@ -13,6 +13,8 @@
 		4A6B78441D07D167005A4A47 /* LKComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6B78431D07D167005A4A47 /* LKComment.m */; };
 		4A6CB6E21D06BE250005D001 /* LKVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6CB6E11D06BE250005D001 /* LKVideoView.m */; };
 		4A6CB6E41D06BE3E0005D001 /* LKVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6CB6E31D06BE3E0005D001 /* LKVideoView.xib */; };
+		4AE96CD21D0E98B500DF846D /* LKCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE96CD01D0E98B500DF846D /* LKCommentViewController.m */; };
+		4AE96CD31D0E98B500DF846D /* LKCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE96CD11D0E98B500DF846D /* LKCommentViewController.xib */; };
 		B51604501C984EE200979F2D /* NSDate+LKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B516044F1C984EE200979F2D /* NSDate+LKExtension.m */; };
 		B51D2F091C99A5AD0099D5F3 /* LKTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51D2F081C99A5AD0099D5F3 /* LKTopicViewController.m */; };
 		B52396C51C97B0C20068123C /* LKTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B52396C31C97B0C20068123C /* LKTopicCell.m */; };
@@ -92,6 +94,9 @@
 		4A6CB6E01D06BE250005D001 /* LKVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKVideoView.h; sourceTree = "<group>"; };
 		4A6CB6E11D06BE250005D001 /* LKVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKVideoView.m; sourceTree = "<group>"; };
 		4A6CB6E31D06BE3E0005D001 /* LKVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKVideoView.xib; sourceTree = "<group>"; };
+		4AE96CCF1D0E98B500DF846D /* LKCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommentViewController.h; sourceTree = "<group>"; };
+		4AE96CD01D0E98B500DF846D /* LKCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommentViewController.m; sourceTree = "<group>"; };
+		4AE96CD11D0E98B500DF846D /* LKCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKCommentViewController.xib; sourceTree = "<group>"; };
 		78D14E0656D196B4B843611B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B516044E1C984EE200979F2D /* NSDate+LKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LKExtension.h"; sourceTree = "<group>"; };
 		B516044F1C984EE200979F2D /* NSDate+LKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LKExtension.m"; sourceTree = "<group>"; };
@@ -307,6 +312,9 @@
 				B578535D1C9D64EE00A67CD8 /* LKShowPictureViewController.h */,
 				B578535E1C9D64EE00A67CD8 /* LKShowPictureViewController.m */,
 				B578535F1C9D64EE00A67CD8 /* LKShowPictureViewController.xib */,
+				4AE96CCF1D0E98B500DF846D /* LKCommentViewController.h */,
+				4AE96CD01D0E98B500DF846D /* LKCommentViewController.m */,
+				4AE96CD11D0E98B500DF846D /* LKCommentViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -646,6 +654,7 @@
 				B5D73FB91C8BFFBA00B64341 /* LKFriendTrendsViewController.xib in Resources */,
 				B57244B91C9035A6005EC9F4 /* LKLoginRegisterViewController.xib in Resources */,
 				B52396C61C97B0C20068123C /* LKTopicCell.xib in Resources */,
+				4AE96CD31D0E98B500DF846D /* LKCommentViewController.xib in Resources */,
 				B55CABE81C9C435D007266E5 /* LKTopicPictureView.xib in Resources */,
 				B57853611C9D64EE00A67CD8 /* LKShowPictureViewController.xib in Resources */,
 				B5D1BC321C8977ED001F8B7B /* Assets.xcassets in Resources */,
@@ -735,6 +744,7 @@
 				B5D73FB71C8BDFC900B64341 /* LKNavigationController.m in Sources */,
 				4A6CB6E21D06BE250005D001 /* LKVideoView.m in Sources */,
 				4A6B78441D07D167005A4A47 /* LKComment.m in Sources */,
+				4AE96CD21D0E98B500DF846D /* LKCommentViewController.m in Sources */,
 				B57244B81C9035A6005EC9F4 /* LKLoginRegisterViewController.m in Sources */,
 				B51D2F091C99A5AD0099D5F3 /* LKTopicViewController.m in Sources */,
 				B5D3C9491C8C2116001F9E54 /* LKRecommendViewController.m in Sources */,

@@ -9,6 +9,7 @@
 #import "LKTopicViewController.h"
 #import "LKTopicModel.h"
 #import "LKTopicCell.h"
+#import "LKCommentViewController.h"
 
 #import <AFNetworking.h>
 #import <UIImageView+WebCache.h>
@@ -190,6 +191,13 @@ static NSString * const LKTopicCellId = @"topic";
     LKTopicModel *topic = self.topics[indexPath.row];
     
     return topic.cellHeight;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    LKCommentViewController *commentVC = [[LKCommentViewController alloc] init];
+    commentVC.topic = self.topics[indexPath.row];
+    [self.navigationController pushViewController:commentVC animated:YES];
 }
 
 

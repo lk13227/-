@@ -12,4 +12,6 @@
 @interface LKTopicCell : UITableViewCell
 /** 帖子数据 */
 @property (nonatomic,strong) LKTopicModel *topic;
+
++ (instancetype)cell;
 @end

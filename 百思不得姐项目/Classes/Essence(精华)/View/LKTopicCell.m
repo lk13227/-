@@ -81,6 +81,11 @@
     return _videoView;
 }
 
++ (instancetype)cell
+{
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
+}
+
 - (void)awakeFromNib
 {
     UIImageView *bgView = [[UIImageView alloc] init];
@@ -167,7 +172,8 @@
 {
     frame.origin.x = LKTopicCellMargin;
     frame.size.width -= LKTopicCellMargin * 2;
-    frame.size.height -= LKTopicCellMargin;
+//    frame.size.height -= LKTopicCellMargin;
+    frame.size.height = self.topic.cellHeight - LKTopicCellMargin;
     frame.origin.y += LKTopicCellMargin;
     
     [super setFrame:frame];
