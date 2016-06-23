@@ -13,6 +13,7 @@
 		4A6B78441D07D167005A4A47 /* LKComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6B78431D07D167005A4A47 /* LKComment.m */; };
 		4A6CB6E21D06BE250005D001 /* LKVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6CB6E11D06BE250005D001 /* LKVideoView.m */; };
 		4A6CB6E41D06BE3E0005D001 /* LKVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6CB6E31D06BE3E0005D001 /* LKVideoView.xib */; };
+		4A7FA5F11D17F481009901F7 /* LKCommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FA5F01D17F481009901F7 /* LKCommentHeaderView.m */; };
 		4AE96CD21D0E98B500DF846D /* LKCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE96CD01D0E98B500DF846D /* LKCommentViewController.m */; };
 		4AE96CD31D0E98B500DF846D /* LKCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE96CD11D0E98B500DF846D /* LKCommentViewController.xib */; };
 		B51604501C984EE200979F2D /* NSDate+LKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B516044F1C984EE200979F2D /* NSDate+LKExtension.m */; };
@@ -94,6 +95,8 @@
 		4A6CB6E01D06BE250005D001 /* LKVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKVideoView.h; sourceTree = "<group>"; };
 		4A6CB6E11D06BE250005D001 /* LKVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKVideoView.m; sourceTree = "<group>"; };
 		4A6CB6E31D06BE3E0005D001 /* LKVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKVideoView.xib; sourceTree = "<group>"; };
+		4A7FA5EF1D17F481009901F7 /* LKCommentHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommentHeaderView.h; sourceTree = "<group>"; };
+		4A7FA5F01D17F481009901F7 /* LKCommentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommentHeaderView.m; sourceTree = "<group>"; };
 		4AE96CCF1D0E98B500DF846D /* LKCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommentViewController.h; sourceTree = "<group>"; };
 		4AE96CD01D0E98B500DF846D /* LKCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommentViewController.m; sourceTree = "<group>"; };
 		4AE96CD11D0E98B500DF846D /* LKCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKCommentViewController.xib; sourceTree = "<group>"; };
@@ -354,6 +357,8 @@
 				4A6CB6E01D06BE250005D001 /* LKVideoView.h */,
 				4A6CB6E11D06BE250005D001 /* LKVideoView.m */,
 				4A6CB6E31D06BE3E0005D001 /* LKVideoView.xib */,
+				4A7FA5EF1D17F481009901F7 /* LKCommentHeaderView.h */,
+				4A7FA5F01D17F481009901F7 /* LKCommentHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -752,6 +757,7 @@
 				B56BF18A1C8ED4F70014E6BD /* LKLKRecommendTagsModel.m in Sources */,
 				B5D73FAB1C8BCFD700B64341 /* LKEssenceViewController.m in Sources */,
 				B5D73FAC1C8BCFD700B64341 /* LKFriendTrendsViewController.m in Sources */,
+				4A7FA5F11D17F481009901F7 /* LKCommentHeaderView.m in Sources */,
 				B5626A501C96F468000E1B10 /* LKTopicModel.m in Sources */,
 				B57853601C9D64EE00A67CD8 /* LKShowPictureViewController.m in Sources */,
 				B56BF18E1C8ED75F0014E6BD /* LKRecommendTagCell.m in Sources */,
@@ -902,7 +908,7 @@
 				INFOPLIST_FILE = "百思不得姐项目/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "liniankeji.com.-------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lmTest.BDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -917,7 +923,7 @@
 				INFOPLIST_FILE = "百思不得姐项目/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "liniankeji.com.-------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lmTest.BDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

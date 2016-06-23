@@ -22,7 +22,8 @@
     return @{
              @"small_image" : @"image0",
              @"large_image" : @"image1",
-             @"smiddle_image" : @"image2"
+             @"smiddle_image" : @"image2",
+             @"ID" : @"id"
              };
 }
 
