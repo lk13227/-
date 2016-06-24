@@ -23,14 +23,11 @@
              @"small_image" : @"image0",
              @"large_image" : @"image1",
              @"smiddle_image" : @"image2",
-             @"ID" : @"id"
+             @"ID" : @"id",
+             @"top_cmt" : @"top_cmt[0]"
              };
 }
 
-+ (NSDictionary *)mj_objectClassInArray
-{
-    return @{@"top_cmt" : @"LKComment"};
-}
 
 - (NSString *)create_time
 {
@@ -114,9 +111,8 @@
         }
         
         //如果有最热评论
-        LKComment *cmt = [self.top_cmt firstObject];
-        if (cmt) {//有最热评论
-            NSString *content = [NSString stringWithFormat:@"%@ : %@", cmt.user.username, cmt.content];
+        if (self.top_cmt) {//有最热评论
+            NSString *content = [NSString stringWithFormat:@"%@ : %@", self.top_cmt.user.username, self.top_cmt.content];
             CGFloat contentH = [content boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:13]} context:nil].size.height;
             _cellHeight += LKTopicCellTopCmtTitleH + contentH + LKTopicCellMargin;
         }

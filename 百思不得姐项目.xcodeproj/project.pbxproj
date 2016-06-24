@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4A3286C81D067D4E0017638D /* LKTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3286C71D067D4E0017638D /* LKTopicVoiceView.m */; };
 		4A3286CA1D067D6C0017638D /* LKTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3286C91D067D6C0017638D /* LKTopicVoiceView.xib */; };
+		4A5AB22C1D1BCB4E005C6A53 /* LKCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5AB22A1D1BCB4E005C6A53 /* LKCommentCell.m */; };
+		4A5AB22D1D1BCB4E005C6A53 /* LKCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A5AB22B1D1BCB4E005C6A53 /* LKCommentCell.xib */; };
 		4A6B78411D07CDF5005A4A47 /* LKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6B78401D07CDF5005A4A47 /* LKUser.m */; };
 		4A6B78441D07D167005A4A47 /* LKComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6B78431D07D167005A4A47 /* LKComment.m */; };
 		4A6CB6E21D06BE250005D001 /* LKVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6CB6E11D06BE250005D001 /* LKVideoView.m */; };
@@ -88,6 +90,9 @@
 		4A3286C61D067D4E0017638D /* LKTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKTopicVoiceView.h; sourceTree = "<group>"; };
 		4A3286C71D067D4E0017638D /* LKTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTopicVoiceView.m; sourceTree = "<group>"; };
 		4A3286C91D067D6C0017638D /* LKTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKTopicVoiceView.xib; sourceTree = "<group>"; };
+		4A5AB2291D1BCB4E005C6A53 /* LKCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommentCell.h; sourceTree = "<group>"; };
+		4A5AB22A1D1BCB4E005C6A53 /* LKCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommentCell.m; sourceTree = "<group>"; };
+		4A5AB22B1D1BCB4E005C6A53 /* LKCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKCommentCell.xib; sourceTree = "<group>"; };
 		4A6B783F1D07CDF5005A4A47 /* LKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKUser.h; sourceTree = "<group>"; };
 		4A6B78401D07CDF5005A4A47 /* LKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKUser.m; sourceTree = "<group>"; };
 		4A6B78421D07D167005A4A47 /* LKComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKComment.h; sourceTree = "<group>"; };
@@ -359,6 +364,9 @@
 				4A6CB6E31D06BE3E0005D001 /* LKVideoView.xib */,
 				4A7FA5EF1D17F481009901F7 /* LKCommentHeaderView.h */,
 				4A7FA5F01D17F481009901F7 /* LKCommentHeaderView.m */,
+				4A5AB2291D1BCB4E005C6A53 /* LKCommentCell.h */,
+				4A5AB22A1D1BCB4E005C6A53 /* LKCommentCell.m */,
+				4A5AB22B1D1BCB4E005C6A53 /* LKCommentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -667,6 +675,7 @@
 				4A3286CA1D067D6C0017638D /* LKTopicVoiceView.xib in Resources */,
 				B5559F971C92BF54003462B2 /* LKPushuideView.xib in Resources */,
 				B5E005B51C8D62BC004B8EDF /* LKRecommendUserCell.xib in Resources */,
+				4A5AB22D1D1BCB4E005C6A53 /* LKCommentCell.xib in Resources */,
 				B57853691C9DA8F200A67CD8 /* LKPublishView.xib in Resources */,
 				B5D3C94A1C8C2116001F9E54 /* LKRecommendViewController.xib in Resources */,
 				B5D3C9541C8C55A6001F9E54 /* LKRecommendCategoryCell.xib in Resources */,
@@ -746,6 +755,7 @@
 				B57853681C9DA8F200A67CD8 /* LKPublishView.m in Sources */,
 				B5D73FAE1C8BCFD700B64341 /* LKNewViewController.m in Sources */,
 				B5E005B81C8D673D004B8EDF /* LKRecommendUserModel.m in Sources */,
+				4A5AB22C1D1BCB4E005C6A53 /* LKCommentCell.m in Sources */,
 				B5D73FB71C8BDFC900B64341 /* LKNavigationController.m in Sources */,
 				4A6CB6E21D06BE250005D001 /* LKVideoView.m in Sources */,
 				4A6B78441D07D167005A4A47 /* LKComment.m in Sources */,
@@ -906,7 +916,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/百思不得姐项目/Classes/Other(其他)/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐项目/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lmTest.BDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -921,7 +931,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/百思不得姐项目/Classes/Other(其他)/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐项目/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lmTest.BDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";

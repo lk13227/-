@@ -8,6 +8,13 @@
 
 #import "LKComment.h"
 
-@implementation LKComment
+#import <MJExtension.h>
 
+@implementation LKComment
++ (NSDictionary *)mj_replacedKeyFromPropertyName
+{
+    return @{
+             @"ID" : @"id"
+             };
+}
 @end
