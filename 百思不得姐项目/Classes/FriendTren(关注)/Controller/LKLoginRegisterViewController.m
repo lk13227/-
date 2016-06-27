@@ -20,10 +20,10 @@
 
 @implementation LKLoginRegisterViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
-    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
 
 /**
@@ -51,19 +51,20 @@
  *  退出按钮
  */
 - (IBAction)back {
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
-/**
- *  控制器内设置状态栏颜色
- *
- *  @return 设置为状态栏白色
- */
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
-}
+///**
+// *  控制器内设置状态栏颜色
+// *
+// *  @return 设置为状态栏白色
+// */
+//- (UIStatusBarStyle)preferredStatusBarStyle
+//{
+//    return UIStatusBarStyleLightContent;
+//}
 
 /**
  *  富文本

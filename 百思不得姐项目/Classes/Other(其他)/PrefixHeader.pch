@@ -15,7 +15,7 @@
 #import "NSDate+LKExtension.h"
 
 #ifdef DEBUG
-#define LKLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#define LKLog(format,...)  NSLog((@"[函数名:%s]\n" "[行号:%d]\n" format),__FUNCTION__,__LINE__,##__VA_ARGS__)
 #else
 #define LKLog( s, ... )
 #endif

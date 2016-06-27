@@ -39,6 +39,7 @@ static NSString * const LKCommentID = @"comment";
 
 /** AFN管理者 */
 @property (nonatomic, strong) AFHTTPSessionManager *manager;
+
 @end
 
 @implementation LKCommentViewController
@@ -248,12 +249,6 @@ static NSString * const LKCommentID = @"comment";
     return [self commentsInSection:indexPath.section][indexPath.row];
 }
 
-#pragma mark - <UITableViewDelegate>
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{//拖动表格隐藏键盘
-    [self.view endEditing:YES];
-}
-
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -326,7 +321,6 @@ static NSString * const LKCommentID = @"comment";
         header.title = @"最新评论";
     }
 
-
     return header;
 }
 
@@ -338,6 +332,59 @@ static NSString * const LKCommentID = @"comment";
     cell.comment = [self commentInIndexPath:indexPath];
     
     return cell;
+}
+
+#pragma mark - <UITableViewDelegate>
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    //拖动表格隐藏键盘
+    [self.view endEditing:YES];
+    
+    //拖动隐藏MenuController
+    [[UIMenuController sharedMenuController] setMenuVisible:NO animated:YES];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIMenuController *menu = [UIMenuController sharedMenuController];
+    if (menu.isMenuVisible) {
+        [menu setMenuVisible:NO animated:YES];
+        return;
+    } else {
+        
+        //被点击的cell
+        LKCommentCell *cell = (LKCommentCell *)[tableView cellForRowAtIndexPath:indexPath];
+        //出现一个第一响应者
+        [cell becomeFirstResponder];
+        
+        //显示MenuController
+        UIMenuItem *ding = [[UIMenuItem alloc] initWithTitle:@"顶" action:@selector(ding:)];
+        UIMenuItem *replay = [[UIMenuItem alloc] initWithTitle:@"回复" action:@selector(replay:)];
+        UIMenuItem *report = [[UIMenuItem alloc] initWithTitle:@"举报" action:@selector(report:)];
+        menu.menuItems = @[ding, replay, report];
+        CGRect rect = CGRectMake(0, cell.height * 0.5, cell.width, cell.height * 0.5);
+        [menu setTargetRect:rect inView:cell];
+        [menu setMenuVisible:YES animated:YES];
+        
+    }
+    
+}
+
+#pragma mark - MenuItem处理
+- (void)ding:(UIMenuController *)menu
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    LKLog(@"%s %@ %zd", __func__, menu, indexPath);
+}
+- (void)replay:(UIMenuController *)menu
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    LKLog(@"%s %@ %zd", __func__, menu, indexPath);
+}
+- (void)report:(UIMenuController *)menu
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    LKLog(@"%s %@ %zd", __func__, menu, indexPath);
 }
 
 //移除所有通知
