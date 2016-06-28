@@ -10,7 +10,9 @@
 #define PrefixHeader_pch
 
 #import "UIView+LKExtension.h"
+#import "UIImage+LKExtension.h"
 #import "UIBarButtonItem+LKExtension.h"
+#import "UIImageView+LKExtension.h"
 #import "LKConst.h"
 #import "NSDate+LKExtension.h"
 

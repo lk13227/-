@@ -17,6 +17,8 @@
 		4A6CB6E41D06BE3E0005D001 /* LKVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6CB6E31D06BE3E0005D001 /* LKVideoView.xib */; };
 		4A6EE48D1D1D3AB100640F50 /* LKTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6EE48C1D1D3AB100640F50 /* LKTopWindow.m */; };
 		4A7FA5F11D17F481009901F7 /* LKCommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FA5F01D17F481009901F7 /* LKCommentHeaderView.m */; };
+		4A9ABED11D2260DB005D19A3 /* UIImage+LKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9ABED01D2260DB005D19A3 /* UIImage+LKExtension.m */; };
+		4A9ABED41D227F28005D19A3 /* UIImageView+LKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9ABED31D227F28005D19A3 /* UIImageView+LKExtension.m */; };
 		4AE96CD21D0E98B500DF846D /* LKCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE96CD01D0E98B500DF846D /* LKCommentViewController.m */; };
 		4AE96CD31D0E98B500DF846D /* LKCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE96CD11D0E98B500DF846D /* LKCommentViewController.xib */; };
 		B51604501C984EE200979F2D /* NSDate+LKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B516044F1C984EE200979F2D /* NSDate+LKExtension.m */; };
@@ -105,6 +107,10 @@
 		4A6EE48C1D1D3AB100640F50 /* LKTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTopWindow.m; sourceTree = "<group>"; };
 		4A7FA5EF1D17F481009901F7 /* LKCommentHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommentHeaderView.h; sourceTree = "<group>"; };
 		4A7FA5F01D17F481009901F7 /* LKCommentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommentHeaderView.m; sourceTree = "<group>"; };
+		4A9ABECF1D2260DB005D19A3 /* UIImage+LKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LKExtension.h"; sourceTree = "<group>"; };
+		4A9ABED01D2260DB005D19A3 /* UIImage+LKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LKExtension.m"; sourceTree = "<group>"; };
+		4A9ABED21D227F28005D19A3 /* UIImageView+LKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LKExtension.h"; sourceTree = "<group>"; };
+		4A9ABED31D227F28005D19A3 /* UIImageView+LKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LKExtension.m"; sourceTree = "<group>"; };
 		4AE96CCF1D0E98B500DF846D /* LKCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommentViewController.h; sourceTree = "<group>"; };
 		4AE96CD01D0E98B500DF846D /* LKCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommentViewController.m; sourceTree = "<group>"; };
 		4AE96CD11D0E98B500DF846D /* LKCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKCommentViewController.xib; sourceTree = "<group>"; };
@@ -520,6 +526,10 @@
 				B5D3C94B1C8C273A001F9E54 /* Foundation+Log.m */,
 				B516044E1C984EE200979F2D /* NSDate+LKExtension.h */,
 				B516044F1C984EE200979F2D /* NSDate+LKExtension.m */,
+				4A9ABECF1D2260DB005D19A3 /* UIImage+LKExtension.h */,
+				4A9ABED01D2260DB005D19A3 /* UIImage+LKExtension.m */,
+				4A9ABED21D227F28005D19A3 /* UIImageView+LKExtension.h */,
+				4A9ABED31D227F28005D19A3 /* UIImageView+LKExtension.m */,
 			);
 			path = "Category(分类)";
 			sourceTree = "<group>";
@@ -784,6 +794,7 @@
 				B57853641C9D893700A67CD8 /* LKProgressView.m in Sources */,
 				B5D73FB01C8BCFD700B64341 /* UIBarButtonItem+LKExtension.m in Sources */,
 				B55CABE61C9C432C007266E5 /* LKTopicPictureView.m in Sources */,
+				4A9ABED41D227F28005D19A3 /* UIImageView+LKExtension.m in Sources */,
 				B5D73FB41C8BCFD700B64341 /* LKTabBar.m in Sources */,
 				B5672ABB1C918AF600D50FFD /* LKTextField.m in Sources */,
 				4A6B78411D07CDF5005A4A47 /* LKUser.m in Sources */,
@@ -796,6 +807,7 @@
 				B5D73FB11C8BCFD700B64341 /* UIView+LKExtension.m in Sources */,
 				B52396C51C97B0C20068123C /* LKTopicCell.m in Sources */,
 				4A3286C81D067D4E0017638D /* LKTopicVoiceView.m in Sources */,
+				4A9ABED11D2260DB005D19A3 /* UIImage+LKExtension.m in Sources */,
 				B56BF1871C8ED2560014E6BD /* LKRecommendTagsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

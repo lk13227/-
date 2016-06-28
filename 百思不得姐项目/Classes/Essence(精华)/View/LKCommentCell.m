@@ -30,7 +30,7 @@
 {
     _comment = comment;
     
-    [self.profileImage sd_setImageWithURL:[NSURL URLWithString:comment.user.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.profileImage setHeader:comment.user.profile_image];
     self.sexImage.image = [comment.user.sex isEqualToString:LKUserSexMale] ? [UIImage imageNamed:@"Profile_manIcon"] : [UIImage imageNamed:@"Profile_womanIcon"];
     self.contentLabel.text = comment.content;
     self.usernameLabel.text = comment.user.username;
@@ -49,6 +49,9 @@
     UIImageView *bgView = [[UIImageView alloc] init];
     bgView.image = [UIImage imageNamed:@"mainCellBackground"];
     self.backgroundView = bgView;
+    
+//    self.profileImage.layer.cornerRadius = self.profileImage.width * 0.5;
+//    self.profileImage.layer.masksToBounds = YES;
 }
 
 - (void)setFrame:(CGRect)frame

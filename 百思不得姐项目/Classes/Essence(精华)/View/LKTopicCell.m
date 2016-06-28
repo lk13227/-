@@ -91,6 +91,9 @@
     UIImageView *bgView = [[UIImageView alloc] init];
     bgView.image = [UIImage imageNamed:@"mainCellBackground"];
     self.backgroundView = bgView;
+    
+//    self.profileImageView.layer.cornerRadius = self.profileImageView.width * 0.5;
+//    self.profileImageView.layer.masksToBounds = YES;
 }
 
 - (void)setTopic:(LKTopicModel *)topic
@@ -101,9 +104,11 @@
     self.sina_VView.hidden = !topic.isSina_v;
     
     //设置头像
-    [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.profileImageView setHeader:topic.profile_image];
+    
     //设置名字
     self.nameLabel.text = topic.name;
+    
     //设置帖子的创建时间
     self.createTimeLabel.text = topic.create_time;
     
