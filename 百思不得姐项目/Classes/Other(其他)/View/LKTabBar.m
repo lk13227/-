@@ -7,7 +7,9 @@
 //
 
 #import "LKTabBar.h"
-#import "LKPublishView.h"
+#import "LKPublishViewController.h"
+#import "LKNavigationController.h"
+#import "LKPostWordViewController.h"
 
 @interface LKTabBar()
 /**
@@ -37,15 +39,23 @@
 
 - (void)publishClick
 {
-    LKPublishView *publish = [LKPublishView publishView];
-    UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    publish.frame = window.bounds;
-    [window addSubview:publish];
+//    LKPublishViewController *publish = [[LKPublishViewController alloc] init];
+//    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publish animated:NO completion:nil];
+    
+    
+    LKPostWordViewController *postWord = [[LKPostWordViewController alloc] init];
+    LKNavigationController *nav = [[LKNavigationController alloc] initWithRootViewController:postWord];
+    
+    // 这里不能使用self来弹出其他控制器, 因为self执行了dismiss操作
+    UIViewController *root = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [root presentViewController:nav animated:YES completion:nil];
 }
 
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    
+    //static BOOL added = NO;
     
     CGFloat width = self.width;
     CGFloat height = self.height;
@@ -58,7 +68,7 @@
     CGFloat buttonW = width / 5;
     CGFloat buttonH = height;
     NSInteger index = 0;
-    for (UIView *button in self.subviews) {
+    for (UIControl *button in self.subviews) {
         if (![button isKindOfClass:NSClassFromString(@"UITabBarButton")]) continue;
         //if (![button isKindOfClass:[UIControl class]] || button == self.publishButton) continue;//两种判断都可以
         
@@ -66,8 +76,23 @@
         CGFloat buttonX = buttonW * ((index > 1)?(index + 1):index);
         button.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
         
+        //增加索引
         index++;
+        
+//        if (added == NO) {
+//            //监听按钮的点击
+//            [button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
+//        }
+        
     }
+    
+//    added = YES;
 }
+
+//- (void)buttonClick
+//{
+//    //发送通知
+//    [LKNoteCenter postNotificationName:LKTabBarDidClickNotification object:nil userInfo:nil];
+//}
 
 @end

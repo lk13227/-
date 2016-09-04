@@ -10,6 +10,7 @@
 #import "LKTopicModel.h"
 #import "LKTopicCell.h"
 #import "LKCommentViewController.h"
+#import "LKNewViewController.h"
 
 #import <AFNetworking.h>
 #import <UIImageView+WebCache.h>
@@ -25,6 +26,8 @@
 @property (nonatomic, copy) NSString *maxtime;
 /** 上一次的请求参数,防止重复请求 */
 @property (nonatomic, strong) NSDictionary *params;
+/** 上次选中的索引(或者控制器) */
+@property (nonatomic, assign) NSInteger lastSelectedIndex;
 @end
 
 @implementation LKTopicViewController
@@ -64,6 +67,21 @@ static NSString * const LKTopicCellId = @"topic";
     
     //注册
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LKTopicCell class]) bundle:nil] forCellReuseIdentifier:LKTopicCellId];
+    
+    //监听tabbar选中的通知
+    [LKNoteCenter addObserver:self selector:@selector(tabBarSelected) name:LKTabBarDidClickNotification object:nil];
+}
+
+- (void)tabBarSelected
+{
+    //如果连续选中2次，刷新
+    if (self.lastSelectedIndex == self.tabBarController.selectedIndex
+        && self.view.isShowingOnKeywindow) {//&& self.tabBarController.selectedViewController == self.navigationController
+        [self.tableView.mj_header beginRefreshing];
+    }
+    
+    //记录这一次选中的索引
+    self.lastSelectedIndex = self.tabBarController.selectedIndex;
 }
 
 - (void)setupRefresh
@@ -74,6 +92,12 @@ static NSString * const LKTopicCellId = @"topic";
     [self.tableView.mj_header beginRefreshing];
     
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
+}
+
+#pragma mark - a参数
+- (NSString *)a
+{
+    return [self.parentViewController isKindOfClass:[LKNewViewController class]] ? @"newlist" : @"list";
 }
 
 #pragma mark - 数据处理
@@ -87,7 +111,7 @@ static NSString * const LKTopicCellId = @"topic";
     
     //参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"] = @"list";
+    params[@"a"] = self.a;
     params[@"c"] = @"data";
     params[@"type"] = @(self.type);
     self.params = params;
@@ -132,7 +156,7 @@ static NSString * const LKTopicCellId = @"topic";
     
     //参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"] = @"list";
+    params[@"a"] = self.a;
     params[@"c"] = @"data";
     params[@"type"] = @(self.type);
     params[@"page"] = @(self.page);

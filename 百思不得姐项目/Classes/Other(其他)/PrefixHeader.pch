@@ -16,6 +16,8 @@
 #import "LKConst.h"
 #import "NSDate+LKExtension.h"
 
+#define LKNoteCenter [NSNotificationCenter defaultCenter]
+
 #ifdef DEBUG
 #define LKLog(format,...)  NSLog((@"[函数名:%s]\n" "[行号:%d]\n" format),__FUNCTION__,__LINE__,##__VA_ARGS__)
 #else

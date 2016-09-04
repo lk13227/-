@@ -100,6 +100,12 @@ static NSString * const LKCommentID = @"comment";
     
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if (![responseObject isKindOfClass:[NSDictionary class]]){ //说明没有评论数据
+            self.tableView.mj_footer.hidden = YES;
+            return ;
+        }
+        
         //最新评论
         NSArray *newComments = [LKComment mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];
         [self.latestComments addObjectsFromArray:newComments];
@@ -141,6 +147,12 @@ static NSString * const LKCommentID = @"comment";
     
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if (![responseObject isKindOfClass:[NSDictionary class]]) { //说明没有评论数据
+            [self.tableView.mj_header endRefreshing];
+            return ;
+        }
+        
         //最热评论
         self.hotComments = [LKComment mj_objectArrayWithKeyValuesArray:responseObject[@"hot"]];
         //最新评论

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0E14D61D485766001E4BA8 /* LKPostWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E14D51D485766001E4BA8 /* LKPostWordViewController.m */; };
+		4A0E14DA1D486DEE001E4BA8 /* LKPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E14D81D486DEE001E4BA8 /* LKPublishViewController.m */; };
+		4A0E14DB1D486DEE001E4BA8 /* LKPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0E14D91D486DEE001E4BA8 /* LKPublishViewController.xib */; };
+		4A2A4A801D2E46B10083B747 /* LKMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A4A7F1D2E46B10083B747 /* LKMeCell.m */; };
+		4A2A4A831D2E51840083B747 /* LKMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A4A821D2E51840083B747 /* LKMeFooterView.m */; };
+		4A2A4A861D2E5BE80083B747 /* LKSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A4A851D2E5BE80083B747 /* LKSquare.m */; };
+		4A2A4A891D2E64060083B747 /* LKSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A4A881D2E64060083B747 /* LKSquareButton.m */; };
 		4A3286C81D067D4E0017638D /* LKTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3286C71D067D4E0017638D /* LKTopicVoiceView.m */; };
 		4A3286CA1D067D6C0017638D /* LKTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3286C91D067D6C0017638D /* LKTopicVoiceView.xib */; };
 		4A5AB22C1D1BCB4E005C6A53 /* LKCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5AB22A1D1BCB4E005C6A53 /* LKCommentCell.m */; };
@@ -19,8 +26,11 @@
 		4A7FA5F11D17F481009901F7 /* LKCommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7FA5F01D17F481009901F7 /* LKCommentHeaderView.m */; };
 		4A9ABED11D2260DB005D19A3 /* UIImage+LKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9ABED01D2260DB005D19A3 /* UIImage+LKExtension.m */; };
 		4A9ABED41D227F28005D19A3 /* UIImageView+LKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9ABED31D227F28005D19A3 /* UIImageView+LKExtension.m */; };
+		4AAA3EAE1D2F8C5C00D0B342 /* LKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAA3EAC1D2F8C5C00D0B342 /* LKWebViewController.m */; };
+		4AAA3EAF1D2F8C5C00D0B342 /* LKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AAA3EAD1D2F8C5C00D0B342 /* LKWebViewController.xib */; };
 		4AE96CD21D0E98B500DF846D /* LKCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE96CD01D0E98B500DF846D /* LKCommentViewController.m */; };
 		4AE96CD31D0E98B500DF846D /* LKCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE96CD11D0E98B500DF846D /* LKCommentViewController.xib */; };
+		7CE04FD93C8E18710AF766B2 /* libPods-百思不得姐项目.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 508EFF47AB7FF47E9CC94966 /* libPods-百思不得姐项目.a */; };
 		B51604501C984EE200979F2D /* NSDate+LKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B516044F1C984EE200979F2D /* NSDate+LKExtension.m */; };
 		B51D2F091C99A5AD0099D5F3 /* LKTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51D2F081C99A5AD0099D5F3 /* LKTopicViewController.m */; };
 		B52396C51C97B0C20068123C /* LKTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B52396C31C97B0C20068123C /* LKTopicCell.m */; };
@@ -42,8 +52,6 @@
 		B57853601C9D64EE00A67CD8 /* LKShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B578535E1C9D64EE00A67CD8 /* LKShowPictureViewController.m */; };
 		B57853611C9D64EE00A67CD8 /* LKShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B578535F1C9D64EE00A67CD8 /* LKShowPictureViewController.xib */; };
 		B57853641C9D893700A67CD8 /* LKProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B57853631C9D893700A67CD8 /* LKProgressView.m */; };
-		B57853681C9DA8F200A67CD8 /* LKPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = B57853661C9DA8F200A67CD8 /* LKPublishView.m */; };
-		B57853691C9DA8F200A67CD8 /* LKPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57853671C9DA8F200A67CD8 /* LKPublishView.xib */; };
 		B5D1BC321C8977ED001F8B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D1BC311C8977ED001F8B7B /* Assets.xcassets */; };
 		B5D1BC401C8977ED001F8B7B /* _______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D1BC3F1C8977ED001F8B7B /* _______Tests.m */; };
 		B5D1BC4B1C8977ED001F8B7B /* _______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D1BC4A1C8977ED001F8B7B /* _______UITests.m */; };
@@ -68,7 +76,6 @@
 		B5E005B41C8D62BC004B8EDF /* LKRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E005B21C8D62BC004B8EDF /* LKRecommendUserCell.m */; };
 		B5E005B51C8D62BC004B8EDF /* LKRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E005B31C8D62BC004B8EDF /* LKRecommendUserCell.xib */; };
 		B5E005B81C8D673D004B8EDF /* LKRecommendUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E005B71C8D673D004B8EDF /* LKRecommendUserModel.m */; };
-		DA4457B638CEF15A83B96B0B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C03D389656344A3E9ABB7109 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +96,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CB8AB8267A48D869F3A3447 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4A0E14D41D485766001E4BA8 /* LKPostWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPostWordViewController.h; sourceTree = "<group>"; };
+		4A0E14D51D485766001E4BA8 /* LKPostWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKPostWordViewController.m; sourceTree = "<group>"; };
+		4A0E14D71D486DEE001E4BA8 /* LKPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPublishViewController.h; sourceTree = "<group>"; };
+		4A0E14D81D486DEE001E4BA8 /* LKPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKPublishViewController.m; sourceTree = "<group>"; };
+		4A0E14D91D486DEE001E4BA8 /* LKPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKPublishViewController.xib; sourceTree = "<group>"; };
+		4A2A4A7E1D2E46B10083B747 /* LKMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMeCell.h; sourceTree = "<group>"; };
+		4A2A4A7F1D2E46B10083B747 /* LKMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMeCell.m; sourceTree = "<group>"; };
+		4A2A4A811D2E51840083B747 /* LKMeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMeFooterView.h; sourceTree = "<group>"; };
+		4A2A4A821D2E51840083B747 /* LKMeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMeFooterView.m; sourceTree = "<group>"; };
+		4A2A4A841D2E5BE80083B747 /* LKSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSquare.h; sourceTree = "<group>"; };
+		4A2A4A851D2E5BE80083B747 /* LKSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSquare.m; sourceTree = "<group>"; };
+		4A2A4A871D2E64060083B747 /* LKSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSquareButton.h; sourceTree = "<group>"; };
+		4A2A4A881D2E64060083B747 /* LKSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSquareButton.m; sourceTree = "<group>"; };
 		4A3286C61D067D4E0017638D /* LKTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKTopicVoiceView.h; sourceTree = "<group>"; };
 		4A3286C71D067D4E0017638D /* LKTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTopicVoiceView.m; sourceTree = "<group>"; };
 		4A3286C91D067D6C0017638D /* LKTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKTopicVoiceView.xib; sourceTree = "<group>"; };
@@ -111,14 +130,18 @@
 		4A9ABED01D2260DB005D19A3 /* UIImage+LKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LKExtension.m"; sourceTree = "<group>"; };
 		4A9ABED21D227F28005D19A3 /* UIImageView+LKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LKExtension.h"; sourceTree = "<group>"; };
 		4A9ABED31D227F28005D19A3 /* UIImageView+LKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LKExtension.m"; sourceTree = "<group>"; };
+		4AAA3EAB1D2F8C5C00D0B342 /* LKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKWebViewController.h; sourceTree = "<group>"; };
+		4AAA3EAC1D2F8C5C00D0B342 /* LKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKWebViewController.m; sourceTree = "<group>"; };
+		4AAA3EAD1D2F8C5C00D0B342 /* LKWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKWebViewController.xib; sourceTree = "<group>"; };
 		4AE96CCF1D0E98B500DF846D /* LKCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKCommentViewController.h; sourceTree = "<group>"; };
 		4AE96CD01D0E98B500DF846D /* LKCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKCommentViewController.m; sourceTree = "<group>"; };
 		4AE96CD11D0E98B500DF846D /* LKCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKCommentViewController.xib; sourceTree = "<group>"; };
-		78D14E0656D196B4B843611B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		508EFF47AB7FF47E9CC94966 /* libPods-百思不得姐项目.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐项目.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BF67354AD5203E93E8CAF63 /* Pods-百思不得姐项目.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐项目.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐项目/Pods-百思不得姐项目.debug.xcconfig"; sourceTree = "<group>"; };
 		B516044E1C984EE200979F2D /* NSDate+LKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LKExtension.h"; sourceTree = "<group>"; };
 		B516044F1C984EE200979F2D /* NSDate+LKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LKExtension.m"; sourceTree = "<group>"; };
 		B51D2F071C99A5AD0099D5F3 /* LKTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKTopicViewController.h; sourceTree = "<group>"; };
-		B51D2F081C99A5AD0099D5F3 /* LKTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTopicViewController.m; sourceTree = "<group>"; };
+		B51D2F081C99A5AD0099D5F3 /* LKTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTopicViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		B52396C21C97B0C20068123C /* LKTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKTopicCell.h; sourceTree = "<group>"; };
 		B52396C31C97B0C20068123C /* LKTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTopicCell.m; sourceTree = "<group>"; };
 		B52396C41C97B0C20068123C /* LKTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKTopicCell.xib; sourceTree = "<group>"; };
@@ -151,9 +174,6 @@
 		B578535F1C9D64EE00A67CD8 /* LKShowPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKShowPictureViewController.xib; sourceTree = "<group>"; };
 		B57853621C9D893700A67CD8 /* LKProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKProgressView.h; sourceTree = "<group>"; };
 		B57853631C9D893700A67CD8 /* LKProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKProgressView.m; sourceTree = "<group>"; };
-		B57853651C9DA8F200A67CD8 /* LKPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKPublishView.h; sourceTree = "<group>"; };
-		B57853661C9DA8F200A67CD8 /* LKPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKPublishView.m; sourceTree = "<group>"; };
-		B57853671C9DA8F200A67CD8 /* LKPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKPublishView.xib; sourceTree = "<group>"; };
 		B5D1BC221C8977ED001F8B7B /* 百思不得姐项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D1BC311C8977ED001F8B7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5D1BC361C8977ED001F8B7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -200,7 +220,7 @@
 		B5E005B31C8D62BC004B8EDF /* LKRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKRecommendUserCell.xib; sourceTree = "<group>"; };
 		B5E005B61C8D673D004B8EDF /* LKRecommendUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKRecommendUserModel.h; sourceTree = "<group>"; };
 		B5E005B71C8D673D004B8EDF /* LKRecommendUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKRecommendUserModel.m; sourceTree = "<group>"; };
-		C03D389656344A3E9ABB7109 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B938177F4400C0136888743D /* Pods-百思不得姐项目.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐项目.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐项目/Pods-百思不得姐项目.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,7 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA4457B638CEF15A83B96B0B /* libPods.a in Frameworks */,
+				7CE04FD93C8E18710AF766B2 /* libPods-百思不得姐项目.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,10 +249,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		70922976E7823E9DC5FC05AA /* Frameworks */ = {
+		4A2A4A7C1D2E46940083B747 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C03D389656344A3E9ABB7109 /* libPods.a */,
+				4A2A4A841D2E5BE80083B747 /* LKSquare.h */,
+				4A2A4A851D2E5BE80083B747 /* LKSquare.m */,
+			);
+			name = Model;
+			path = Controller/Model;
+			sourceTree = "<group>";
+		};
+		4A2A4A7D1D2E46940083B747 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A2A4A7E1D2E46B10083B747 /* LKMeCell.h */,
+				4A2A4A7F1D2E46B10083B747 /* LKMeCell.m */,
+				4A2A4A811D2E51840083B747 /* LKMeFooterView.h */,
+				4A2A4A821D2E51840083B747 /* LKMeFooterView.m */,
+				4A2A4A871D2E64060083B747 /* LKSquareButton.h */,
+				4A2A4A881D2E64060083B747 /* LKSquareButton.m */,
+			);
+			name = View;
+			path = Controller/View;
+			sourceTree = "<group>";
+		};
+		4A63B4B41D44CE56001792B7 /* Publish(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				4A63B4B51D44CE56001792B7 /* Controller */,
+				4A63B4B91D44CE56001792B7 /* View */,
+			);
+			path = "Publish(发布)";
+			sourceTree = "<group>";
+		};
+		4A63B4B51D44CE56001792B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A0E14D71D486DEE001E4BA8 /* LKPublishViewController.h */,
+				4A0E14D81D486DEE001E4BA8 /* LKPublishViewController.m */,
+				4A0E14D91D486DEE001E4BA8 /* LKPublishViewController.xib */,
+				4A0E14D41D485766001E4BA8 /* LKPostWordViewController.h */,
+				4A0E14D51D485766001E4BA8 /* LKPostWordViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A63B4B91D44CE56001792B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A555717EEB12D2E205FB074 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				508EFF47AB7FF47E9CC94966 /* libPods-百思不得姐项目.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -244,8 +316,8 @@
 				B5D1BC3E1C8977ED001F8B7B /* 百思不得姐项目Tests */,
 				B5D1BC491C8977ED001F8B7B /* 百思不得姐项目UITests */,
 				B5D1BC231C8977ED001F8B7B /* Products */,
-				BD673D12061E1C36C37CF322 /* Pods */,
-				70922976E7823E9DC5FC05AA /* Frameworks */,
+				FC192A8B59A4BDB6E80F1328 /* Pods */,
+				9A555717EEB12D2E205FB074 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -298,6 +370,7 @@
 		B5D73F821C8BCFD700B64341 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4A63B4B41D44CE56001792B7 /* Publish(发布) */,
 				B5D73F831C8BCFD700B64341 /* Essence(精华) */,
 				B5D73F951C8BCFD700B64341 /* New(新帖) */,
 				B5D73F891C8BCFD700B64341 /* FriendTren(关注) */,
@@ -438,8 +511,8 @@
 			isa = PBXGroup;
 			children = (
 				B5D73F901C8BCFD700B64341 /* Controller */,
-				B5D73F931C8BCFD700B64341 /* Model */,
-				B5D73F941C8BCFD700B64341 /* View */,
+				4A2A4A7C1D2E46940083B747 /* Model */,
+				4A2A4A7D1D2E46940083B747 /* View */,
 			);
 			path = "Me(我)";
 			sourceTree = "<group>";
@@ -449,22 +522,11 @@
 			children = (
 				B5D73F911C8BCFD700B64341 /* LKMeViewController.h */,
 				B5D73F921C8BCFD700B64341 /* LKMeViewController.m */,
+				4AAA3EAB1D2F8C5C00D0B342 /* LKWebViewController.h */,
+				4AAA3EAC1D2F8C5C00D0B342 /* LKWebViewController.m */,
+				4AAA3EAD1D2F8C5C00D0B342 /* LKWebViewController.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		B5D73F931C8BCFD700B64341 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B5D73F941C8BCFD700B64341 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		B5D73F951C8BCFD700B64341 /* New(新帖) */ = {
@@ -541,9 +603,6 @@
 				B5D73FA51C8BCFD700B64341 /* LKTabBarController.m */,
 				B5D73FB51C8BDFC900B64341 /* LKNavigationController.h */,
 				B5D73FB61C8BDFC900B64341 /* LKNavigationController.m */,
-				B57853651C9DA8F200A67CD8 /* LKPublishView.h */,
-				B57853661C9DA8F200A67CD8 /* LKPublishView.m */,
-				B57853671C9DA8F200A67CD8 /* LKPublishView.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -562,11 +621,11 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		BD673D12061E1C36C37CF322 /* Pods */ = {
+		FC192A8B59A4BDB6E80F1328 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0CB8AB8267A48D869F3A3447 /* Pods.debug.xcconfig */,
-				78D14E0656D196B4B843611B /* Pods.release.xcconfig */,
+				8BF67354AD5203E93E8CAF63 /* Pods-百思不得姐项目.debug.xcconfig */,
+				B938177F4400C0136888743D /* Pods-百思不得姐项目.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -578,12 +637,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5D1BC4F1C8977ED001F8B7B /* Build configuration list for PBXNativeTarget "百思不得姐项目" */;
 			buildPhases = (
-				608CFFBAC7EEC235036A317D /* Check Pods Manifest.lock */,
+				36A1D4FFCF64AFF284C1B682 /* [CP] Check Pods Manifest.lock */,
 				B5D1BC1E1C8977ED001F8B7B /* Sources */,
 				B5D1BC1F1C8977ED001F8B7B /* Frameworks */,
 				B5D1BC201C8977ED001F8B7B /* Resources */,
-				C0FBB804E6C653E4AD9151D5 /* Embed Pods Frameworks */,
-				243C9739A4065A038A723122 /* Copy Pods Resources */,
+				15B57E1D6C1BC9475B810A36 /* [CP] Embed Pods Frameworks */,
+				C82C45EFC45D750F75BFE614 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -680,6 +739,7 @@
 			files = (
 				B56BF18F1C8ED75F0014E6BD /* LKRecommendTagCell.xib in Resources */,
 				B5D73FB91C8BFFBA00B64341 /* LKFriendTrendsViewController.xib in Resources */,
+				4AAA3EAF1D2F8C5C00D0B342 /* LKWebViewController.xib in Resources */,
 				B57244B91C9035A6005EC9F4 /* LKLoginRegisterViewController.xib in Resources */,
 				B52396C61C97B0C20068123C /* LKTopicCell.xib in Resources */,
 				4AE96CD31D0E98B500DF846D /* LKCommentViewController.xib in Resources */,
@@ -691,7 +751,7 @@
 				B5559F971C92BF54003462B2 /* LKPushuideView.xib in Resources */,
 				B5E005B51C8D62BC004B8EDF /* LKRecommendUserCell.xib in Resources */,
 				4A5AB22D1D1BCB4E005C6A53 /* LKCommentCell.xib in Resources */,
-				B57853691C9DA8F200A67CD8 /* LKPublishView.xib in Resources */,
+				4A0E14DB1D486DEE001E4BA8 /* LKPublishViewController.xib in Resources */,
 				B5D3C94A1C8C2116001F9E54 /* LKRecommendViewController.xib in Resources */,
 				B5D3C9541C8C55A6001F9E54 /* LKRecommendCategoryCell.xib in Resources */,
 			);
@@ -714,29 +774,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		243C9739A4065A038A723122 /* Copy Pods Resources */ = {
+		15B57E1D6C1BC9475B810A36 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐项目/Pods-百思不得姐项目-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		608CFFBAC7EEC235036A317D /* Check Pods Manifest.lock */ = {
+		36A1D4FFCF64AFF284C1B682 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -744,19 +804,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C0FBB804E6C653E4AD9151D5 /* Embed Pods Frameworks */ = {
+		C82C45EFC45D750F75BFE614 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐项目/Pods-百思不得姐项目-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -767,7 +827,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5E005B41C8D62BC004B8EDF /* LKRecommendUserCell.m in Sources */,
-				B57853681C9DA8F200A67CD8 /* LKPublishView.m in Sources */,
+				4A2A4A861D2E5BE80083B747 /* LKSquare.m in Sources */,
+				4A2A4A801D2E46B10083B747 /* LKMeCell.m in Sources */,
+				4A2A4A831D2E51840083B747 /* LKMeFooterView.m in Sources */,
 				B5D73FAE1C8BCFD700B64341 /* LKNewViewController.m in Sources */,
 				B5E005B81C8D673D004B8EDF /* LKRecommendUserModel.m in Sources */,
 				4A5AB22C1D1BCB4E005C6A53 /* LKCommentCell.m in Sources */,
@@ -777,12 +839,14 @@
 				4AE96CD21D0E98B500DF846D /* LKCommentViewController.m in Sources */,
 				B57244B81C9035A6005EC9F4 /* LKLoginRegisterViewController.m in Sources */,
 				B51D2F091C99A5AD0099D5F3 /* LKTopicViewController.m in Sources */,
+				4A0E14DA1D486DEE001E4BA8 /* LKPublishViewController.m in Sources */,
 				B5D3C9491C8C2116001F9E54 /* LKRecommendViewController.m in Sources */,
 				B57244BC1C9048C3005EC9F4 /* LKVerticalButton.m in Sources */,
 				B56BF18A1C8ED4F70014E6BD /* LKLKRecommendTagsModel.m in Sources */,
 				4A6EE48D1D1D3AB100640F50 /* LKTopWindow.m in Sources */,
 				B5D73FAB1C8BCFD700B64341 /* LKEssenceViewController.m in Sources */,
 				B5D73FAC1C8BCFD700B64341 /* LKFriendTrendsViewController.m in Sources */,
+				4AAA3EAE1D2F8C5C00D0B342 /* LKWebViewController.m in Sources */,
 				4A7FA5F11D17F481009901F7 /* LKCommentHeaderView.m in Sources */,
 				B5626A501C96F468000E1B10 /* LKTopicModel.m in Sources */,
 				B57853601C9D64EE00A67CD8 /* LKShowPictureViewController.m in Sources */,
@@ -800,10 +864,12 @@
 				4A6B78411D07CDF5005A4A47 /* LKUser.m in Sources */,
 				B5D73FB21C8BCFD700B64341 /* LKTabBarController.m in Sources */,
 				B5D3C9531C8C55A6001F9E54 /* LKRecommendCategoryCell.m in Sources */,
+				4A2A4A891D2E64060083B747 /* LKSquareButton.m in Sources */,
 				B5626A531C97069A000E1B10 /* LKConst.m in Sources */,
 				B51604501C984EE200979F2D /* NSDate+LKExtension.m in Sources */,
 				B5D3C94C1C8C273A001F9E54 /* Foundation+Log.m in Sources */,
 				B5D73FB31C8BCFD700B64341 /* main.m in Sources */,
+				4A0E14D61D485766001E4BA8 /* LKPostWordViewController.m in Sources */,
 				B5D73FB11C8BCFD700B64341 /* UIView+LKExtension.m in Sources */,
 				B52396C51C97B0C20068123C /* LKTopicCell.m in Sources */,
 				4A3286C81D067D4E0017638D /* LKTopicVoiceView.m in Sources */,
@@ -928,7 +994,7 @@
 		};
 		B5D1BC501C8977ED001F8B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CB8AB8267A48D869F3A3447 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 8BF67354AD5203E93E8CAF63 /* Pods-百思不得姐项目.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -943,7 +1009,7 @@
 		};
 		B5D1BC511C8977ED001F8B7B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78D14E0656D196B4B843611B /* Pods.release.xcconfig */;
+			baseConfigurationReference = B938177F4400C0136888743D /* Pods-百思不得姐项目.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";

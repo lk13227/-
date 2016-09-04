@@ -23,3 +23,10 @@ NSString * const LKUserSexFemale = @"f";
 
 /** 精华-cell-最热评论标题的高度 */
 CGFloat const LKTopicCellTopCmtTitleH = 20;
+
+/** tabBar被选中的通知名字 */
+NSString * const LKTabBarDidClickNotification = @"LKTabBarDidClickNotification";
+/** tabBar被选中的通知 - 被点击的控制器的index key */
+NSString * const LKSelectedControllerIndexKey = @"LKSelectedControllerIndexKey";
+/** tabBar被选中的通知 - 被点击的控制器 key  */
+NSString * const LKSelectedControllerKey = @"LKSelectedControllerKey";

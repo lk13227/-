@@ -11,7 +11,7 @@
 #import "LKPushuideView.h"
 #import "LKTopWindow.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <UITabBarControllerDelegate>
 
 @end
 
@@ -27,6 +27,7 @@
     
     //设置窗口的跟控制器
     UITabBarController *tabBarController = [[LKTabBarController alloc] init];
+    tabBarController.delegate = self;
     
     self.window.rootViewController = tabBarController;
     
@@ -37,6 +38,16 @@
     [LKPushuideView show];
     
     return YES;
+}
+
+#pragma mark - <UITabBarControllerDelegate>
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+//    NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+//    userInfo[LKSelectedControllerKey] = viewController;
+//    userInfo[LKSelectedControllerIndexKey] = @(tabBarController.selectedIndex);
+    //发送通知
+    [LKNoteCenter postNotificationName:LKTabBarDidClickNotification object:nil userInfo:nil];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

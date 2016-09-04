@@ -6,8 +6,8 @@
 //  Copyright © 2016年 LK. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "LKEssenceViewController.h"
 
-@interface LKNewViewController : UIViewController
+@interface LKNewViewController : LKEssenceViewController
 
 @end
